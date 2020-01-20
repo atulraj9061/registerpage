@@ -147,12 +147,12 @@ validate = () => {
   </thead>
   { <tbody>
     {
-       item.map((p,z) =>
+       item.map((value,z) =>
         <tr key={z}>
-        <td>{p.firstname}</td>
-        <td>{p.lastname}</td>
-        <td>{p.username}</td>
-        <td>{p.password}</td>
+        <td>{value.firstname}</td>
+        <td>{value.lastname}</td>
+        <td>{value.username}</td>
+        <td>{value.password}</td>
       </tr>
       )
     }
