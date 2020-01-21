@@ -107,7 +107,7 @@ validate = () => {
           <input type="text"
            name="lastname"
            className="wrapper"
-           value={this.state.lastname || ''}
+           value={this.state.lastname}
            onChange={this.handleChange}
             /><br></br><br></br>
      
@@ -147,12 +147,12 @@ validate = () => {
   </thead>
   { <tbody>
     {
-       item.map((value,i) =>
+       item.map((item,i) =>
         <tr key={i}>
-        <td>{value.firstname}</td>
-        <td>{value.lastname}</td>
-        <td>{value.username}</td>
-        <td>{value.password}</td>
+        <td>{item.firstname}</td>
+        <td>{item.lastname}</td>
+        <td>{item.username}</td>
+        <td>{item.password}</td>
       </tr>
       )
     }
